@@ -1,34 +1,34 @@
 $(document).ready(function(){
-  // $('.carousel__inner').slick({
-  //   speed: 1200,
-  //   adaptiveHeight: false,
-  //   prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg" alt="prev"></button>',
-  //   nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg alt="next""></button>',
-  //   responsive: [
-  //     {
-  //       breakpoint: 992,
-  //       settings: {
-  //         dots: false,
-  //         arrows: true
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         dots: false,
-  //         arrows: true
-  //       }
-  //     },
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         dots: false,
-  //         arrows: true
-  //       }
-  //     }
-  //   ]
+  $('.carousel__inner').slick({
+    speed: 1200,
+    adaptiveHeight: false,
+    prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg" alt="prev"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg" alt="next"></button>',
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          dots: false,
+          arrows: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: false,
+          arrows: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          dots: false,
+          arrows: true
+        }
+      }
+    ]
 
-  // });
+  });
 
   //для роботи табів(вкладок)
   $('ul.catalog__tabs').on('click', 'li:not(.catalog__tab_active)', function() {
@@ -181,20 +181,18 @@ $(document).ready(function(){
 
 
 // за допомогою tiny-slider:
-const slider = tns({
-  container: '.carousel__inner',
-  items: 1,
-  slideBy: 'page',
-  autoplay: false,
-  nav: false,
-  controls: false
-});
+// const slider = tns({
+//   container: '.carousel__inner',
+//   items: 1,
+//   slideBy: 'page',
+//   autoplay: false,
+//   nav: false,
+//   controls: false
+// });
 
-document.querySelector('.slick-prev').addEventListener('click', function () {
-  slider.goTo('prev');
-});
-document.querySelector('.slick-next').addEventListener('click', function () {
-  slider.goTo('next');
-});
-
-
+// document.querySelector('.slick-prev').addEventListener('click', function () {
+//   slider.goTo('prev');
+// });
+// document.querySelector('.slick-next').addEventListener('click', function () {
+//   slider.goTo('next');
+// });

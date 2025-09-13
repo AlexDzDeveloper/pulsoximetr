@@ -1,3 +1,5 @@
+@use '../base/variables' as vars;
+
 .overlay {
   display: none;
   position: fixed;
@@ -22,7 +24,7 @@
     top: 0;
     font-size: 41px;
     line-height: 21px;
-    color: $main-color;
+    color: vars.$main-color;
     cursor: pointer;
   }
   &__subtitle {
@@ -44,7 +46,7 @@
     min-height: 140px;
   }
   input.error {
-    border: 1px solid $main-color;
+    border: 1px solid vars.$main-color;
     border-radius: 5px;
     background-color: #ffe6e6;
   }

@@ -1,3 +1,5 @@
+@use '../base/variables' as vars;
+
 .footer {
   height: 630px;
   position: relative;
@@ -13,7 +15,7 @@
     transform: translateX(-50%);
     width: 460px;
     height: 270px;
-    background: $main-color;
+    background: vars.$main-color;
     padding: 50px 68px 60px 68px;
   }
   &__addr {
