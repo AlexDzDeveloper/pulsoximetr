@@ -1,3 +1,5 @@
+@use '../base/variables' as vars;
+
 .consultation {
   min-height: 680px;
   padding: 100px 0 92px 0;
@@ -9,7 +11,7 @@
     color: #FFFFFF;
   }
   input.error {
-    border: 1px solid $main-color;
+    border: 1px solid vars.$main-color;
     border-radius: 5px;
     background-color: #ffcccc;
   }
