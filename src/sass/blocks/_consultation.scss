@@ -1,0 +1,25 @@
+@use '../base/variables' as vars;
+
+.consultation {
+  min-height: 680px;
+  padding: 100px 0 92px 0;
+  background: url(../img/bg/consultation.jpg) center (center/cover) no-repeat;
+  &__descr {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+  input.error {
+    border: 1px solid vars.$main-color;
+    border-radius: 5px;
+    background-color: #ffcccc;
+  }
+  label.error {
+    color: #fff;
+    border: none;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+}

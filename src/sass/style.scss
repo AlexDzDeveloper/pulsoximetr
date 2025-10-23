@@ -1,0 +1,31 @@
+@use "sass:meta";
+@use 'libs/bootstrap-reboot.min';
+@use 'libs/slick';
+@use 'libs/animate.min';
+
+@use 'base/variables' as vars;
+@use 'base/animations';
+* {
+  font-family: 'Museo Sans Cyrc', sans-serif;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@include meta.load-css('blocks/promo');
+@include meta.load-css('blocks/header');
+@include meta.load-css('blocks/buttons');
+@include meta.load-css('blocks/title');
+@include meta.load-css('blocks/advantages');
+@include meta.load-css('blocks/consultation');
+@include meta.load-css('blocks/carousel');
+@include meta.load-css('blocks/catalog');
+@include meta.load-css('blocks/feed');
+@include meta.load-css('blocks/footer');
+@include meta.load-css('blocks/modal');
+@include meta.load-css('blocks/forms');
+@include meta.load-css('blocks/pageup');
+@include meta.load-css('blocks/media');

@@ -1,0 +1,35 @@
+# Node.js
+node_modules/
+
+# Gulp build artifacts
+dist/
+*.log
+*.tmp
+
+# Sass cache
+.sass-cache/
+*.css.map
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# IDE-specific
+.vscode/
+.idea/
+
+# System files
+*.swp
+*.bak
+
+# Optional: compiled CSS/JS if генеруєш з SASS
+src/css/
+src/js/*.min.js
+
+# Optional: environment configs
+.env
+.env.local
+.env.production
+
+# Sensitive or build folders
+src/mailer/
